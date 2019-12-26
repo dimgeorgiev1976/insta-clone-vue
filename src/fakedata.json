@@ -39,6 +39,37 @@
                     "surname": " Alexandrov"
                 }
             }]
+        },
+        {
+            "id": 3,
+            "srcs" :{
+                "src" : "img/posts/js-carousel/00.jpg",
+                "src1": "img/posts/js-carousel/01.jpg",
+                "src2": "img/posts/js-carousel/02.jpg",
+                "src3": "img/posts/js-carousel/03.jpg",
+                "src4": "img/posts/js-carousel/04.jpg",
+                "src5": "img/posts/js-carousel/05.jpg",
+                "src6": "img/posts/js-carousel/06.jpg",
+                "src7": "img/posts/js-carousel/07.jpg",
+                "src8": "img/posts/js-carousel/08.jpg",
+                "src9": "img/posts/js-carousel/09.jpg"
+            },
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus fugiat, aliquam! In fugit id sint, nam repellendus possimus sit itaque aspernatur modi facere earum mollitia veritatis officia quo iste nisi.",
+            "tags": ["forest", "travel", "journey", "holiday"],
+            "user": {
+                "ava": "img/avatars/01.png",
+                "name": "John ",
+                "surname": " Golt"
+            },
+            "comments": [{
+                "id": 3,
+                "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias cumque odio eaque autem, incidunt sit non a error harum atque magni, dolor necessitatibus cum! In eum earum nam, ipsam dolorem.",
+                "user": {
+                    "ava": "img/avatars/01.png",
+                    "name": "John ",
+                    "surname": " Golt"
+                }
+            }]
         }
     ]
 }
