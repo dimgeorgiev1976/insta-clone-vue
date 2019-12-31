@@ -32,9 +32,9 @@
         <div class="post__img">
             <img :src="data.src" alt="Photo">
                <Carousel 
-               v-for="srcs of data.srcs" 
-               :data="srcs"
-               v-bind:key="srcs">{{ srcs }}</Carousel>
+               v-for="src of data.srcs" 
+               v-bind:key="src.id">{{ srcs }}
+               </Carousel>
         </div>
 
         <!-- post__data  -->

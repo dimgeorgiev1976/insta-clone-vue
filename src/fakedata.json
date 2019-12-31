@@ -2,11 +2,11 @@
     "posts": [
         {
             "id": 1,
-            "src": "img/posts/man-in-forest.jpg",
+            "src": "/img/posts/man-in-forest.jpg",
             "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus fugiat, aliquam! In fugit id sint, nam repellendus possimus sit itaque aspernatur modi facere earum mollitia veritatis officia quo iste nisi.",
             "tags": ["forest", "travel", "journey", "holiday"],
             "user": {
-                "ava": "img/avatars/01.png",
+                "ava": "/img/avatars/01.png",
                 "name": "Алексей ",
                 "surname": " Данчин"
             },
@@ -14,7 +14,7 @@
                 "id": 1,
                 "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias cumque odio eaque autem, incidunt sit non a error harum atque magni, dolor necessitatibus cum! In eum earum nam, ipsam dolorem.",
                 "user": {
-                    "ava": "img/avatars/01.png",
+                    "ava": "/img/avatars/01.png",
                     "name": "Alexander ",
                     "surname": " Alexandrov"
                 }
@@ -22,11 +22,11 @@
         },
         {
             "id": 2,
-            "src": "img/posts/girl-pc.jpg",
+            "src": "/img/posts/girl-pc.jpg",
             "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus fugiat, aliquam! In fugit id sint, nam repellendus possimus sit itaque aspernatur modi facere earum mollitia veritatis officia quo iste nisi.",
             "tags": ["forest", "travel", "journey", "holiday"],
             "user": {
-                "ava": "img/avatars/01.png",
+                "ava": "/img/avatars/01.png",
                 "name": "Алексей ",
                 "surname": " Данчин"
             },
@@ -34,7 +34,7 @@
                 "id": 2,
                 "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias cumque odio eaque autem, incidunt sit non a error harum atque magni, dolor necessitatibus cum! In eum earum nam, ipsam dolorem.",
                 "user": {
-                    "ava": "img/avatars/01.png",
+                    "ava": "/img/avatars/01.png",
                     "name": "Alexander ",
                     "surname": " Alexandrov"
                 }
@@ -42,18 +42,44 @@
         },
         {
             "id": 3,
-            "srcs" :{
-                "src" : "img/posts/js-carousel/00.jpg",
-                "src1": "img/posts/js-carousel/01.jpg",
-                "src2": "img/posts/js-carousel/02.jpg",
-                "src3": "img/posts/js-carousel/03.jpg",
-                "src4": "img/posts/js-carousel/04.jpg",
-                "src5": "img/posts/js-carousel/05.jpg",
-                "src6": "img/posts/js-carousel/06.jpg",
-                "src7": "img/posts/js-carousel/07.jpg",
-                "src8": "img/posts/js-carousel/08.jpg",
-                "src9": "img/posts/js-carousel/09.jpg"
-            },
+            "srcs" :[ 
+            { 
+                "id": 1,
+                "src" : "img/posts/js-carousel/00.jpg"
+                },
+                { 
+                "id": 2,
+                "src" : "img/posts/js-carousel/01.jpg"
+                },
+                { 
+                "id": 3,
+                "src" : "img/posts/js-carousel/02.jpg"
+                },
+                { 
+                "id": 4,
+                "src" : "img/posts/js-carousel/03.jpg"
+                },
+                { 
+                "id": 5,
+                "src" : "img/posts/js-carousel/04.jpg"
+                },
+                { 
+                "id": 6,
+                "src" : "img/posts/js-carousel/05.jpg"
+                },
+                { 
+                "id": 7,
+                "src" : "img/posts/js-carousel/06.jpg"
+                },
+                { 
+                "id": 8,
+                "src" : "img/posts/js-carousel/07.jpg"
+                },
+                { 
+                "id": 9,
+                "src" : "img/posts/js-carousel/08.jpg"
+                }
+            ],
             "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus fugiat, aliquam! In fugit id sint, nam repellendus possimus sit itaque aspernatur modi facere earum mollitia veritatis officia quo iste nisi.",
             "tags": ["forest", "travel", "journey", "holiday"],
             "user": {

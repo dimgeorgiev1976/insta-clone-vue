@@ -7,10 +7,10 @@
                 <div class="post__user">
                     <div class="user">
                         <a href="#" class="user__avatar">
-                            <img :src="post.src" alt="">
+                            <img :src="post.user.ava" alt="">
                         </a>
                         <a href="#" class="user__name">
-                            Alexander Alexandrov
+                         {{ post.user.name }}   {{ post.user.surname}}
                         </a>
                     </div>
 
@@ -21,14 +21,14 @@
             </div>
 
             <div class="post__img">
-                <img src="img/posts/man-in-forest.jpg" alt="Photo">
+                <img src="/img/posts/man-in-forest.jpg" alt="Photo">
             </div>
 
             <div class="post__edit">
                 <div class="post__edit-name">Описание:</div>
                 <div class="post__edit-textarea-wrapper">
-                    <textarea
-                        class="post__edit-textarea">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus fugiat, aliquam! In fugit id sint, nam repellendus possimus sit itaque aspernatur modi facere earum mollitia veritatis officia quo iste nisi.</textarea>
+                    <textarea v-model="post.description"
+                        class="post__edit-textarea"></textarea>
                 </div>
             </div>
 
@@ -50,15 +50,10 @@
 
 <script>
 export default {
-    created () {
-        const posts = require('./../fakedata.json').posts
-
-        for (const post of posts) {
-            if (post.id === this.postId ) {
-                return  this.post = post
-            }
-        }
-    },
+  async  created () {
+        this.post = await this.$store.dispatch('getPostById', 
+        this.postId)
+        },
 
     data () {
         return {
