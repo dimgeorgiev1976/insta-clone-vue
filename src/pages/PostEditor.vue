@@ -40,8 +40,9 @@
             </div>
 
             <div class="post__buttons">
-                <button class="btn btn--save">Сохранить</button>
-                <button class="btn btn--cancel">Отмена</button>
+                <button class="btn btn--save" >Сохранить</button>
+                <button class="btn btn--cancel" 
+                >Отмена</button>
             </div>
         </div>
 
@@ -60,7 +61,7 @@ export default {
             post: null
         }
     },
-
+ 
     computed: {
         postId () {
             return parseInt( this.$route.params.id)

@@ -42,44 +42,7 @@
         },
         {
             "id": 3,
-            "srcs" :[ 
-            { 
-                "id": 1,
-                "src" : "img/posts/js-carousel/00.jpg"
-                },
-                { 
-                "id": 2,
-                "src" : "img/posts/js-carousel/01.jpg"
-                },
-                { 
-                "id": 3,
-                "src" : "img/posts/js-carousel/02.jpg"
-                },
-                { 
-                "id": 4,
-                "src" : "img/posts/js-carousel/03.jpg"
-                },
-                { 
-                "id": 5,
-                "src" : "img/posts/js-carousel/04.jpg"
-                },
-                { 
-                "id": 6,
-                "src" : "img/posts/js-carousel/05.jpg"
-                },
-                { 
-                "id": 7,
-                "src" : "img/posts/js-carousel/06.jpg"
-                },
-                { 
-                "id": 8,
-                "src" : "img/posts/js-carousel/07.jpg"
-                },
-                { 
-                "id": 9,
-                "src" : "img/posts/js-carousel/08.jpg"
-                }
-            ],
+            "src": "/img/posts/09.jpg",
             "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus fugiat, aliquam! In fugit id sint, nam repellendus possimus sit itaque aspernatur modi facere earum mollitia veritatis officia quo iste nisi.",
             "tags": ["forest", "travel", "journey", "holiday"],
             "user": {

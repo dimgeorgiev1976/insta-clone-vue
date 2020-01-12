@@ -12,7 +12,7 @@ export default new VueRouter({
         },
         {
             path: '/post/:id',
-            component: () => import('@/pages/Post.vue')
+            component: () => import('@/components/Post.vue')
         },
         {
             path: '/post/:id/edit',
