@@ -46,7 +46,7 @@
             "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus fugiat, aliquam! In fugit id sint, nam repellendus possimus sit itaque aspernatur modi facere earum mollitia veritatis officia quo iste nisi.",
             "tags": ["forest", "travel", "journey", "holiday"],
             "user": {
-                "ava": "img/avatars/01.png",
+                "ava": "/img/avatars/01.png",
                 "name": "John ",
                 "surname": " Golt"
             },
@@ -54,9 +54,29 @@
                 "id": 3,
                 "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias cumque odio eaque autem, incidunt sit non a error harum atque magni, dolor necessitatibus cum! In eum earum nam, ipsam dolorem.",
                 "user": {
-                    "ava": "img/avatars/01.png",
+                    "ava": "/img/avatars/01.png",
                     "name": "John ",
                     "surname": " Golt"
+                }
+            }]
+        },
+        {
+            "id": 4,
+            "src": "/img/posts/man-in-forest.jpg",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus fugiat, aliquam! In fugit id sint, nam repellendus possimus sit itaque aspernatur modi facere earum mollitia veritatis officia quo iste nisi.",
+            "tags": ["forest", "cooking", "sayling", "resting"],
+            "user": {
+                "ava": "/img/avatars/01.png",
+                "name": "Алексей ",
+                "surname": " Данчин"
+            },
+            "comments": [{
+                "id": 4,
+                "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias cumque odio eaque autem, incidunt sit non a error harum atque magni, dolor necessitatibus cum! In eum earum nam, ipsam dolorem.",
+                "user": {
+                    "ava": "/img/avatars/01.png",
+                    "name": "Alexander ",
+                    "surname": " Alexandrov"
                 }
             }]
         }
