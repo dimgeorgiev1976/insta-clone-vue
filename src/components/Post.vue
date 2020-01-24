@@ -31,7 +31,7 @@
 
         <div class="post__img">
             <img :src="data.src" alt="Photo">
-                <!-- <Slider>
+                <Slider>
                     <div>
                         <transition-group name="fade" tag="div">
                         <div v-for="i in [currentIndex]" :key="i">
@@ -41,7 +41,7 @@
                         <a class="prev"  href="#">&#10094; Previous</a>
                         <a class="next"  href="#">&#10095; Next</a>
                     </div>
-                </Slider> -->
+                </Slider>
              </div>
 
         <!-- post__data  -->
@@ -80,12 +80,12 @@
 
 <script>
 import Comment from '@/components/Comment'
-// import Slider from '@/components/Slider'
+import Slider from '@/components/Slider'
 export default {
     props: ['data'],
     components: {
         Comment,
-        // Slider
+        Slider
     }
 }
 </script>
