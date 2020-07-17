@@ -38,9 +38,6 @@
 <script>
 
   export default {
-    name: 'app',
-    components: {
-      // Slider
-    }
+    name: 'app'
   }
 </script>

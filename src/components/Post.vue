@@ -30,18 +30,10 @@
         </div>
 
         <div class="post__img">
-            <img :src="data.src" alt="Photo">
-                <Slider>
-                    <div>
-                        <transition-group name="fade" tag="div">
-                        <div v-for="i in [currentIndex]" :key="i">
-                            <img :src="currentImg" />
-                        </div>
-                        </transition-group>
-                        <a class="prev"  href="#">&#10094; Previous</a>
-                        <a class="next"  href="#">&#10095; Next</a>
-                    </div>
-                </Slider>
+            <img if="post.type === 'slided'"
+                :src="data.src" alt="Photo">
+                
+                <Slider> </Slider>
              </div>
 
         <!-- post__data  -->
