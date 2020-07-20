@@ -1,96 +1,76 @@
 <template>
-        <div class="post"> 
+    <div class="post">
+			<div class="post__header">
 
-        <div class="post__header">
+				<div class="post__user">
+					<div class="user">
+						<a href="#" class="user__avatar">
+							<img :src="post.user.image" alt="">
+						</a>
+						<a href="#" class="user__name">
+							{{post.user.name}} {{post.user.family}}
+						</a>
+					</div>
+				</div>
 
-            <div class="post__user">
-                <div class="user">
-                    <router-link :to="`/post/${data.id}/edit`" class="user__avatar">
-                        <img :src="data.user.ava" alt="" />
-                    </router-link>
-                    <router-link :to="`/post/${data.id}/edit`" class="user__name">{{ data.user.name }} 
-                        {{ data.user.surname }}</router-link>
+				<div class="post__links">
+					<a href="#" class="edit-link" @click.prevent="deletePost(post.id)">
+						<i class="far fa-trash-alt"></i>
+						Delete
+					</a>
+					<router-link :to="`/post/${post.id}/edit`" class="edit-link">
+						<i class="fas fa-pencil-alt"></i>
+						Edit
+					</router-link>
+
+				</div>
+            </div>
+<!-- ReWORK HERE -->
+			<div class="post__img">
+				<img :src="post.content.image" alt="Photo" v-if="post.content.image.length ===1">
+
+                <div class="slider owl-theme" v-else>
+                    <img v-for="image of post.content.image" :key="image"
+                    :src="image" alt="Photo">
+
                 </div>
+			</div>
 
-            </div>
+			<div class="post__data">
 
-            <div class="post__links">
-                <a href="#" class="edit-link">
-                    <i class="far fa-trash-alt"></i>
-                    Delete
-                </a>
+				<div class="post__description">
+					{{post.content.description}}
+				</div>
 
+				<div class="post__hashtags">
+					<a href="#" v-for="tag of post.content.tags" :key="tag">{{tag}}</a>
+				</div>
+			</div>
 
-                <a href="edit.html" class="edit-link">
-                    <i class="fas fa-pencil-alt"></i>
-                    Edit
-                </a>
+			<div class="post__comments">
+				<Comment v-for="comment of post.comments" :key="comment.content" :comment = "comment"/>
+			</div>
 
-            </div>
-        </div>
+			<div class="post__comment-form">
+				<div class="comment-form">
+					<textarea class="comment-form__textarea" placeholder="Добавить комментарий"></textarea>
+					<button disabled class="comment-form__button">Опубликовать</button>
+				</div>
+			</div>
 
-        <div class="post__img">
-            <img if="post.type === 'slided'"
-                :src="data.src" alt="Photo">
-                
-                <Slider> </Slider>
-             </div>
-
-        <!-- post__data  -->
-        <div class="post__data">
-
-            <div class="post__description">
-                {{ data.description}}
-            </div>
-
-            <div class="post__hashtags">
-                <template v-for="tag of data.tags" >
-                    <a href="#" v-bind:key="tag" >#{{ tag }}</a>
-                </template>
-                                    
-            </div>
-        </div>
-        <!-- // post__data -->
-
-        <!-- post__comments -->
-        <div class="post__comments">
-            <Comment v-for="comment of data.comments" :data="comment"
-            v-bind:key="comment.id" ></Comment>
-            
-        </div>
-        <!-- // post__comments -->
-
-        <div class="post__comment-form">
-            <div class="comment-form">
-                <textarea class="comment-form__textarea" placeholder="Добавить комментарий"></textarea>
-                <button disabled class="comment-form__button">Опубликовать</button>
-            </div>
-        </div>
-
-    </div>
+		</div>
 </template>
-
 <script>
-import Comment from '@/components/Comment'
-import Slider from '@/components/Slider'
+import Comment from './Comment.vue'
 export default {
-    props: ['data'],
-    components: {
-        Comment,
-        Slider
-    }
+    props:['post'],
+    components:{
+        Comment
+	},
+	methods:{
+		deletePost(id){
+			this.$store.dispatch('deletePost', id)
+		}
+	}
 }
 </script>
-
-<style>
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-body {
-  margin: 0px;
-}
-</style>

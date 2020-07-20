@@ -1,89 +1,163 @@
 {
     "posts": [
         {
-            "id": 1,
-            "src": "/img/posts/man-in-forest.jpg",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus fugiat, aliquam! In fugit id sint, nam repellendus possimus sit itaque aspernatur modi facere earum mollitia veritatis officia quo iste nisi.",
-            "tags": ["forest", "travel", "journey", "holiday"],
+            "id": 0,
             "user": {
-                "ava": "/img/avatars/01.png",
-                "name": "Алексей ",
-                "surname": " Данчин"
+                "name": "Alex",
+                "family": "Smith",
+                "image": "/img/avatars/01.png"
             },
-            "comments": [{
-                "id": 1,
-                "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias cumque odio eaque autem, incidunt sit non a error harum atque magni, dolor necessitatibus cum! In eum earum nam, ipsam dolorem.",
+            "content": {
+                "image": ["/img/posts/man-in-forest.jpg"],
+                "description": "Постоянно манящие в даль путешествия открывают безграничные возможности для самопознания.",
+                "tags": ["#forest", "#travel", "#journey", "#holiday"]
+            },
+            "comments": [
+                {
                 "user": {
-                    "ava": "/img/avatars/01.png",
-                    "name": "Alexander ",
-                    "surname": " Alexandrov"
+                    "name": "Anna",
+                    "family": "Dell",
+                    "image": "/img/avatars/02.png"
+                },
+                "content": "Красиво. "
+                },
+                {
+                "user": {
+                    "name": "Aleksey",
+                    "family": "Sidorov",
+                    "image": "/img/avatars/06.jpg"
+                },
+                "content": "Согласен, очень круто "
+                },
+                {
+                "user": {
+                    "name": "Sasha",
+                    "family": "Sorova",
+                    "image": "/img/avatars/03.png"
+                },
+                "content": "Давно уехал? "
                 }
-            }]
+            ]
         },
-        {
-            "id": 2,
-            "src": "/img/posts/girl-pc.jpg",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus fugiat, aliquam! In fugit id sint, nam repellendus possimus sit itaque aspernatur modi facere earum mollitia veritatis officia quo iste nisi.",
-            "tags": ["forest", "travel", "journey", "holiday"],
+        {   "id": 1,
             "user": {
-                "ava": "/img/avatars/01.png",
-                "name": "Алексей ",
-                "surname": " Данчин"
+                "name": "Alex",
+                "family": "Smith",
+                "image": "/img/avatars/01.png"
             },
-            "comments": [{
-                "id": 2,
-                "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias cumque odio eaque autem, incidunt sit non a error harum atque magni, dolor necessitatibus cum! In eum earum nam, ipsam dolorem.",
+            "content": {
+                "image": ["/img/posts/girl-pc.jpg"],
+                "description": "Кодить - это просто)",
+                "tags": ["#js", "#jsnative", "#fanny", "#holiday"]
+            },
+            "comments": [
+                {
                 "user": {
-                    "ava": "/img/avatars/01.png",
-                    "name": "Alexander ",
-                    "surname": " Alexandrov"
+                    "name": "Mark",
+                    "family": "Link",
+                    "image": "/img/avatars/04.png"
+                },
+                "content": "ха-ха-ха "
+                },
+                {
+                    "user": {
+                        "name": "Mark",
+                        "family": "Link",
+                        "image": "/img/avatars/04.png"
+                    },
+                    "content": "тоже так думаю) "
+                },
+                {
+                    "user": {
+                        "name": "Masha",
+                        "family": "Ford",
+                        "image": "/img/avatars/05.png"
+                    },
+                    "content": " Html за час и норм"
                 }
-            }]
+            ]
         },
-        {
-            "id": 3,
-            "src": "/img/posts/09.jpg",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus fugiat, aliquam! In fugit id sint, nam repellendus possimus sit itaque aspernatur modi facere earum mollitia veritatis officia quo iste nisi.",
-            "tags": ["forest", "travel", "journey", "holiday"],
+        {   "id": 2,
             "user": {
-                "ava": "/img/avatars/01.png",
-                "name": "John ",
-                "surname": " Golt"
+                "name": "Alex",
+                "family": "Smith",
+                "image": "/img/avatars/01.png"
             },
-            "comments": [{
-                "id": 3,
-                "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias cumque odio eaque autem, incidunt sit non a error harum atque magni, dolor necessitatibus cum! In eum earum nam, ipsam dolorem.",
+            "content": {
+                "image": ["/img/posts/second.jpg"],
+                "description": "Лето самое лучшее время)",
+                "tags": ["#summer", "#smile", "#hat"]
+            },
+            "comments": [
+                {
                 "user": {
-                    "ava": "/img/avatars/01.png",
-                    "name": "John ",
-                    "surname": " Golt"
+                    "name": "Masha",
+                    "family": "Ford",
+                    "image": "/img/avatars/05.png"
+                },
+                "content": "А мне зима больше нравится "
+                },
+                {
+                    "user": {
+                        "name": "Mark",
+                        "family": "Link",
+                        "image": "/img/avatars/04.png"
+                    },
+                    "content": "Зимой тоже хорошо) "
+                },
+                {
+                    "user": {
+                        "name": "Sasha",
+                        "family": "Sorova",
+                        "image": "/img/avatars/03.png"
+                    },
+                    "content": "я за осень"
                 }
-            }]
+            ]
         },
-        {
-            "id": 4,
-            "src": [
+        {   "id": 3,
+            "user": {
+                "name": "Alex",
+                "family": "Smith",
+                "image": "/img/avatars/01.png"
+            },
+            "content": {
+                "image": [
                     "/img/posts/js-carousel/00.jpg",
                     "/img/posts/js-carousel/01.jpg",
                     "/img/posts/js-carousel/02.jpg",
                     "/img/posts/js-carousel/03.jpg"
-                    ],
-            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus fugiat, aliquam! In fugit id sint, nam repellendus possimus sit itaque aspernatur modi facere earum mollitia veritatis officia quo iste nisi.",
-            "tags": ["forest", "cooking", "sayling", "resting"],
-            "user": {
-                "ava": "/img/avatars/01.png",
-                "name": "Алексей ",
-                "surname": " Данчин"
+                ],
+                "description": "Лето самое лучшее время)",
+                "tags": ["#summer", "#smile", "#hat"]
             },
-            "comments": [{
-                "id": 4,
-                "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias cumque odio eaque autem, incidunt sit non a error harum atque magni, dolor necessitatibus cum! In eum earum nam, ipsam dolorem.",
+            "comments": [
+                {
                 "user": {
-                    "ava": "/img/avatars/01.png",
-                    "name": "Alexander ",
-                    "surname": " Alexandrov"
+                    "name": "Masha",
+                    "family": "Ford",
+                    "image": "/img/avatars/05.png"
+                },
+                "content": "А мне зима больше нравится "
+                },
+                {
+                    "user": {
+                        "name": "Mark",
+                        "family": "Link",
+                        "image": "/img/avatars/04.png"
+                    },
+                    "content": "Зимой тоже хорошо) "
+                },
+                {
+                    "user": {
+                        "name": "Sasha",
+                        "family": "Sorova",
+                        "image": "/img/avatars/03.png"
+                    },
+                    "content": "я за осень"
                 }
-            }]
+            ]
         }
+        
     ]
 }

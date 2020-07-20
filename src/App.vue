@@ -1,43 +1,19 @@
 <template>
   <div id="app">
-    <div class="header">
-      <div class="container">
-        <div class="header__row">
-
-          <a href="index.html" class="header__logo">
-            <i class="fab fa-dev"></i>
-          </a>
-
-          <div class="header__search">
-            <div class="search">
-              <input type="text" placeholder="Поиск">
-              <div class="search__cancel search__cancel--active">
-                <i class="fas fa-times-circle"></i>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="header__links">
-            <a href="#" class="header__link">
-              <i class="fas fa-user"></i>
-            </a>
-            <a href="#" class="header__link">
-              <i class="fas fa-paper-plane"></i>
-            </a>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-     <router-view />
+    <Header/>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-
-  export default {
-    name: 'app'
+import Header from '@/components/Header.vue'
+export default {
+  name: 'app',
+  components: {
+    Header
+  },
+  created(){
+    this.$store.dispatch('downloadPosts')
   }
+}
 </script>

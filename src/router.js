@@ -1,22 +1,24 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
+
 Vue.use(VueRouter)
 
 export default new VueRouter({
     mode: 'history',
-    routes: [
+    routes:[
         {
             path: '/wall',
-            component: () => import('@/pages/Wall.vue')
-        },
-        {
-            path: '/post/:id',
-            component: () => import('@/components/Post.vue')
+            component: ()=>import('./views/Wall.vue')
         },
         {
             path: '/post/:id/edit',
-            component: () => import('@/pages/PostEditor.vue')
+            component: ()=>import('./views/Editor.vue')
+        },
+        {
+            path: '/create_post',
+            component: ()=>import('./views/Creator.vue')
+
         },
         {
             path: '*',
